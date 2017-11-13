@@ -1,8 +1,6 @@
 # EdgeSlidingBack
 An Android library help app with edge sliding back like ios
 
-## v1.0.4
-
 [ ![Download](https://api.bintray.com/packages/geejoe/maven/edgeslidingback/images/download.svg) ](https://bintray.com/geejoe/maven/edgeslidingback/_latestVersion)
 
 ## 简介
@@ -50,8 +48,4 @@ compile 'com.geejoe:edgeslidingback:1.0.5'
     </application>
 ```
 
-## 版本更新
-
-###
-V1.0.3
-增加速度检测，支持快速滑动返回
+#### 重写Activity的onSlidingBack()方法,处理滑动返回销毁Activity前的工作，例如需要setResult、释放资源等工作
