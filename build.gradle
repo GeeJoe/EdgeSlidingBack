@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        encoding "UTF-8"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:25.3.1'
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'edgeslidingback'
+
+    publishedGroupId = 'com.geejoe'
+    libraryName = 'EdgeSlidingBack'
+    artifact = 'edgeslidingback'
+
+    libraryDescription = 'An Android library help app with edge sliding back like ios'
+
+    siteUrl = 'https://github.com/GeeJoe/EdgeSlidingBack'
+    gitUrl = 'https://github.com/GeeJoe/EdgeSlidingBack.git'
+
+    libraryVersion = '1.0.5'
+
+    developerId = 'geejoe'
+    developerName = 'GeeJoe'
+    developerEmail = 'geejoe_developer@outlook.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
