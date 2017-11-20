@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -23,7 +23,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:26.1.0'
 }
 
 ext {
@@ -39,7 +39,7 @@ ext {
     siteUrl = 'https://github.com/GeeJoe/EdgeSlidingBack'
     gitUrl = 'https://github.com/GeeJoe/EdgeSlidingBack.git'
 
-    libraryVersion = '1.0.5'
+    libraryVersion = '1.0.7'
 
     developerId = 'geejoe'
     developerName = 'GeeJoe'

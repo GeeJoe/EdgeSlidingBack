@@ -17,7 +17,7 @@ An Android library help app with edge sliding back like ios
 
 本项目已同步到Jcenter,可直接引用依赖：
 ```Java
-compile 'com.geejoe:edgeslidingback:1.0.5'
+compile 'com.geejoe:edgeslidingback:1.0.7'
 ```
 
 ## 使用方法
